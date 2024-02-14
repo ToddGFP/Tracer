@@ -1,3 +1,5 @@
+<img src="https://github.com/ToddGFP/Tracer/blob/main/Tracer/Assets.xcassets/AppIcon.appiconset/icon-1024.png" width=128 alt="App Icon">
+
 # Tracer
 
 Tracer is a Memory game for iOS written by Todd Gibbons with SwiftUI and UIKit.  The idea was conceived of by Brian Arizaga and Todd Gibbons in 2013.
