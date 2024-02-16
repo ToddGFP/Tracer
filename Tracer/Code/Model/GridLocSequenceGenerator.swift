@@ -180,13 +180,7 @@ class GridLocSequenceGenerator {
         guard var candidates = gridLocsTwoSquares(fromGridLoc: lastAddedGridLoc) else {
             return nil
         }
-        
-        // Legacy
-        //candidates.subtract(gridLocsAdjacent(toGridLoc: lastAddedGridLoc))
-        
-        // possibly:
-        // - make it so, in any sub sequence following the first, when it lays down the first square a nice two squares away from the last one from the last sub sequence, the *second* one it lays down should specifically not be the one between the first one and the last one from the last sub- ya feel me?  so just do a straight math test on that sucker and it'll work in all four directions outa the box - last loc and first loc, and see where the logical tweener is there and that gets subtracted from the set.  that can be another convenience function to grab that specific lsat-member-of-last-sub-sequence deal.  and if it's a diagonal role, then it has to not steer back towards the last-of-the-lsat-sub in either dierction- it must turn away in some way, that coudl even be added as a restrction, just to make it more appealing...
-        
+                
         // Avoid accidentally triggering OS-level swipe gestures from screen edges
         candidates.subtract(gridLocsAtEdgesOfScreen)
         
