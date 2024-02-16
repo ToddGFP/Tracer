@@ -1,4 +1,4 @@
-<img src="https://github.com/ToddGFP/Tracer/blob/main/Tracer/Assets.xcassets/AppIcon.appiconset/icon-1024.png" width=128 alt="App Icon">
+<img src="https://github.com/ToddGFP/Tracer/blob/main/icon.png" width=128 alt="App Icon">
 
 # Tracer
 
