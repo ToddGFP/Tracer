@@ -10,8 +10,9 @@ This project is being published primarily as a portfolio piece for demonstrating
 **Structural Notes:**
 
 - Most of the view layer is written with SwiftUI.
-- GridView and TileView are implemented ub UIKit to ensure optimum performance for the core game UX.
+- GridView and TileView are implemented in UIKit to ensure optimum performance for the core game UX.
 - The GridView is repurposed as a musical instrument via Jam mode.
-- The GridView is used to show a background animation behind the main menu.  Because of that view's persistence, The game's view model (GameViewModel) drives the control flow for the entire app.
-- The GameModel uses GridLocSequenceGenerator to create the puzzles that drive the core gameplay.  GameModel is also responsible for parsing the player's input to determine how it affects game progression.
-- A Unit Test ensures the puzzles are not too difficult to generate within the allotted number of tries.
+- The GridView is used to show a background animation behind the main menu. Because of the persistence of that view, The game's view model (GameViewModel) drives the control flow for the entire app.
+- The GameModel handles parsing the player's input to determine how it affects gameplay.
+- GameModel uses GridLocSequenceGenerator to create the puzzles that drive the core gameplay. 
+- A Unit Test ensures the puzzles are not too difficult for GridLocSequenceGenerator to generate within the allotted number of attempts.
