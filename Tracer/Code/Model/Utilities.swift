@@ -69,7 +69,7 @@ struct GridLoc: Equatable, Hashable {
     }
 
     var isRest: Bool {
-        return x == 0 && y == 0
+        return self == GridLoc.rest
     }
     
     var asString: String {

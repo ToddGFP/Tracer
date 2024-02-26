@@ -45,26 +45,26 @@ class GameModel {
         var attempt = attempt
         
         // Remove rests from the goal sequence, since the player can't (and shouldn't need to) input a rest
-        let sequenceSansRests = sequence.filter {
+        let sequenceWithoutRests = sequence.filter {
             $0 != GridLoc.rest
         }
 
         // Truncate the attempt in case they traced past the end of the sequence to avoid out-of-range errors/confusion/mayhem
-        if attempt.count > sequenceSansRests.count {
-            for _ in 1...(attempt.count - sequenceSansRests.count) {
+        if attempt.count > sequenceWithoutRests.count {
+            for _ in 1...(attempt.count - sequenceWithoutRests.count) {
                 attempt.removeLast()
             }
         }
         
         // If the attempt perfectly matches the sequence, they won!
-        if attempt == sequenceSansRests {
+        if attempt == sequenceWithoutRests {
             return .puzzleCompleted
         }
         
         // If there are any mistakes, it's game over
         for attemptNumber in 1...attempt.count {
             let index = attemptNumber - 1
-            guard attempt[index] == sequenceSansRests[index] else {
+            guard attempt[index] == sequenceWithoutRests[index] else {
                 return .mistakeMade
             }
         }
