@@ -80,7 +80,7 @@ class GameViewModel: ObservableObject {
         if currentSubLevel > DesignConstants.subLevelsPerLevel {
             currentLevel += 1
             currentSubLevel = 1
-            gridViewAnimationNeeded = .levelCompleted // *** may need to get moved or asynced for timing
+            gridViewAnimationNeeded = .levelCompleted
         } else {
             startSubLevel()
         }
@@ -89,7 +89,7 @@ class GameViewModel: ObservableObject {
     func showEndGameAnimation() {
         debug("GameViewModel: showEndGameAnimation()", 0, .controlFlow)
         
-        gridViewAnimationNeeded = .puzzleFailed  // *** may need to get moved or asynced for timing
+        gridViewAnimationNeeded = .puzzleFailed
     }
     
     func endGame() {
