@@ -10,9 +10,9 @@ import SwiftUI
 /**
  The Grid is the game board.  The reason it needs a Mode enum is because it plays three different roles:
  
- - **idle** mode allows the grid to provide background entertainment behind the main menu
+ - **idle** mode allows the grid to serve as a background decoration behind the main menu
  - **play** mode is the game itself
- - **jam** mode allows the player to jam on the game boafd like a musical instrument
+ - **jam** mode allows the player to jam on the game board like a musical instrument
  
  Because of this unconventional re-use of the primary game board, the structure of the app revolves around the ever-present GridView always doing *something* to create a consistent UX.
  */
@@ -72,7 +72,7 @@ struct GridLoc: Equatable, Hashable {
         return GridLoc.zero
     }
     
-    // A GridLoc is valid if it's within the bounds of the grid
+    /// A GridLoc is valid if it's within the bounds of the grid
     var isValid: Bool {
         return x >= 1 && y >= 1 && x <= DesignConstants.gridWidth && y <= DesignConstants.gridHeight
     }
@@ -181,7 +181,7 @@ func debug(_ message: String,_ indent: Int,_ mode: DebugMode) {
     print(mode.abbreviation + ": " + indentString + message)
 }
 
-// SwiftUI bridge to debug()
+/// SwiftUI bridge to debug()
 extension View {
     func debugFromSwiftUIView(_ message: String) -> Self {
         debug(message, 0, .swiftUIViews)
