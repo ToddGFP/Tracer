@@ -7,15 +7,6 @@
 
 import SwiftUI
 
-/**
- The Grid is the game board.  The reason it needs a Mode enum is because it plays three different roles:
- 
- - **idle** mode allows the grid to serve as a background decoration behind the main menu
- - **play** mode is the game itself
- - **jam** mode allows the player to jam on the game board like a musical instrument
- 
- Because of this unconventional re-use of the primary game board, the structure of the app revolves around the ever-present GridView always doing *something* to create a consistent UX.
- */
 enum GridMode {
     case idle
     case play
