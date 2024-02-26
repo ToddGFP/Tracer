@@ -31,7 +31,7 @@ class GameViewModel: ObservableObject {
         gridMode = .jam
     }
         
-    func resetPlayThroughState() {
+    private func resetPlayThroughState() {
         debug("GameViewModel: resetPlayThroughState()", 0, .controlFlow)
         
         currentLevel = 1
@@ -62,7 +62,7 @@ class GameViewModel: ObservableObject {
         }
     }
 
-    func startSubLevel() {
+    private func startSubLevel() {
         mostRecentStartingLoc = currentSequence.count > 0 ? currentSequence[0] : GridLoc.zero
         currentSequence = gameModel.newSequence(forLevel: currentLevel, mostRecentStartingLoc: mostRecentStartingLoc)
         currentAttempt = GridLocSequence()
@@ -117,7 +117,7 @@ class GameViewModel: ObservableObject {
         }
     }
 
-    func addNewIdleAnimationToQueue(withPriorDuration: TimeInterval) {
+    private func addNewIdleAnimationToQueue(withPriorDuration: TimeInterval) {
         debug("GameViewModel: addNewIdleAnimationToQueue()", 0, .controlFlow)
         
         var pattern = [PuzzleComponent]()
