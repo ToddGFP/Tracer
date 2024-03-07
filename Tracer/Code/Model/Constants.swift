@@ -9,7 +9,7 @@ import UIKit
 import SwiftUI
 
 /**
- Each member of this array determines the seeds that form the puzzle for one level of the game.  For each level, each Int in its sub-array determines the number of adjacent tiles that will be randomly derived as a *sub-sequence* of the level's puzzle.  A pause or 'rest' is automatically inserted between sub-sequences.  The series of sequences are designed to present increasing challenges and interesting rhythms.
+ Each member of this array determines the seeds that form the puzzle for one level of the game.  For each level, each Int in its sub-array determines the number of adjacent tiles that will be randomly derived as a *sub-sequence* of the level's puzzle.  A pause or 'rest' is automatically inserted between sub-sequences.  The sequences are designed to present increasing challenges and interesting rhythms.
  */
 var sequenceTemplates: [[Int]] = [
     [3],

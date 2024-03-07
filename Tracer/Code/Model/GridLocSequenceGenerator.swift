@@ -184,7 +184,7 @@ class GridLocSequenceGenerator {
         // Avoid accidentally triggering OS-level swipe gestures from screen edges
         candidates.subtract(gridLocsAtEdgesOfScreen)
         
-        // Avoid repeating anything already in the overall sequence
+        // Avoid repeating anything already in the sequence
         candidates.subtract(allGridLocsInSequence)
         
         return candidates.isEmpty ? nil : candidates
