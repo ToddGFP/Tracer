@@ -33,9 +33,13 @@ struct GameView: View {
                                     Spacer()
                                 }
                             }
-                            GridViewWrapper(tileSize: tileSize, gridViewSize: gridViewSize)
-                                .frame(width: gridViewSize.width, height: gridViewSize.height, alignment: .center)
-                                .edgesIgnoringSafeArea(.all)
+                            if DesignConstants.useSwiftUIGridView {
+                                
+                            } else {
+                                GridViewWrapper(tileSize: tileSize, gridViewSize: gridViewSize)
+                                    .frame(width: gridViewSize.width, height: gridViewSize.height, alignment: .center)
+                                    .edgesIgnoringSafeArea(.all)
+                            }
                         }
                         
                         if gameViewModel.isLevelStartViewVisible {

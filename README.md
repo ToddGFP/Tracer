@@ -3,11 +3,9 @@
 
 # Tracer
 
-Tracer is a Memory game for iOS written by Todd Gibbons with SwiftUI, Combine and UIKit.  The idea was first conceived by Brian Arizaga and Todd Gibbons in 2013.
+Tracer is a Memory game for iOS written by Todd Gibbons with SwiftUI, Combine and UIKit.  I hope this project inspires other game developers with its relatively simple MVVM architecture.  It is available on the iOS App Store <a href="https://apps.apple.com/us/app/tracer-a-memory-game/id6477837958">Here</a>.<!-- and my developer portfolio is available <a href="http://toddgibbons.com/apps">Here</a>.-->
 
-This project is being published primarily as a portfolio piece for demonstrating my iOS development skills.  I hope this project inspires other game developers with its relatively simple MVVM structure.  It is available on the iOS App Store <a href="https://apps.apple.com/us/app/tracer-a-memory-game/id6477837958">Here</a>.<!-- and my developer portfolio is available <a href="http://toddgibbons.com/apps">Here</a>.-->
-
-**Structural Notes:**
+**Notes:**
 
 - Most of the view layer is written with SwiftUI.
 - GridView and TileView are implemented in UIKit to ensure optimum performance for the core game UX.
@@ -15,4 +13,4 @@ This project is being published primarily as a portfolio piece for demonstrating
 - The GameModel handles parsing the player's input to determine how it affects gameplay.
 - GameModel uses GridLocSequenceGenerator to create the puzzles that drive the core gameplay. 
 - A Unit Test ensures the puzzles are not too difficult for GridLocSequenceGenerator to generate within the allotted number of attempts.
-- The GridView is repurposed as a musical instrument via Jam mode.
+- The GridView is repurposed for use as a musical instrument via Jam mode.

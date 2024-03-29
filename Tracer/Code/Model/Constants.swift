@@ -30,6 +30,7 @@ var sequenceTemplates: [[Int]] = [
 
 struct DesignConstants {
     // App-Level
+    static let useSwiftUIGridView: Bool = false
     static let enableIdleAnimation: Bool = true
     static let subLevelsPerLevel: Int = 3
     static let attemptsToGiveSubSequenceGenerator: Int = 5

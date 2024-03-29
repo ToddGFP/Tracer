@@ -122,6 +122,7 @@
 		5F55D5472B77D7A300323C5A /* 07_06.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5F55D4ED2B77D7A300323C5A /* 07_06.m4a */; };
 		5F55D5482B77D7A300323C5A /* 09_03.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5F55D4EE2B77D7A300323C5A /* 09_03.m4a */; };
 		5F55D5492B77D7A300323C5A /* 05_03.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5F55D4EF2B77D7A300323C5A /* 05_03.m4a */; };
+		5FA696C02BABAB3800D0E68E /* SwiftUIGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA696BF2BABAB3800D0E68E /* SwiftUIGridView.swift */; };
 		5FDFCA3A2B7AA37D00BF71AF /* GridView+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDFCA392B7AA37D00BF71AF /* GridView+Colors.swift */; };
 /* End PBXBuildFile section */
 
@@ -262,6 +263,7 @@
 		5F55D4ED2B77D7A300323C5A /* 07_06.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 07_06.m4a; sourceTree = "<group>"; };
 		5F55D4EE2B77D7A300323C5A /* 09_03.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 09_03.m4a; sourceTree = "<group>"; };
 		5F55D4EF2B77D7A300323C5A /* 05_03.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 05_03.m4a; sourceTree = "<group>"; };
+		5FA696BF2BABAB3800D0E68E /* SwiftUIGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGridView.swift; sourceTree = "<group>"; };
 		5FDFCA392B7AA37D00BF71AF /* GridView+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GridView+Colors.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -398,6 +400,7 @@
 				5F55D47D2B77D78900323C5A /* RootView.swift */,
 				5F55D47A2B77D78900323C5A /* MainMenuView.swift */,
 				5F55D4792B77D78900323C5A /* GameView.swift */,
+				5FA696BF2BABAB3800D0E68E /* SwiftUIGridView.swift */,
 				5F55D47C2B77D78900323C5A /* GridViewWrapper.swift */,
 				5F55D47B2B77D78900323C5A /* LevelStartView.swift */,
 				5F55D47E2B77D78900323C5A /* GameOverView.swift */,
@@ -735,6 +738,7 @@
 				5F55D48F2B77D78900323C5A /* LevelStartView.swift in Sources */,
 				5F55D48E2B77D78900323C5A /* MainMenuView.swift in Sources */,
 				5F55D48C2B77D78900323C5A /* GridView+PanGestureDelegate.swift in Sources */,
+				5FA696C02BABAB3800D0E68E /* SwiftUIGridView.swift in Sources */,
 				5F55D4852B77D78900323C5A /* TracerApp.swift in Sources */,
 				5F55D4932B77D78900323C5A /* GameViewModel+GridViewDelegate.swift in Sources */,
 				5F55D4942B77D78900323C5A /* GameViewModel.swift in Sources */,

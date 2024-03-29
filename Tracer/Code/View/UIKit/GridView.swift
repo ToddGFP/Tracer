@@ -11,15 +11,15 @@ import AVFoundation
 /**
  Builds a grid comprised of TileViews to act as the Tracer game board.
  
- Tap and pan gestures accept user input across the entire board which, after eliminating redundancies, trigger TileViews to  produce visual and audio feedback for the selected tile.
+ Tap and pan gestures accept user input across the entire board which, after eliminating redundant events, trigger TileViews to produce visual and audio feedback for the selected tile.
 
- `GridView` has three different `gridMode` settings that allow the view to be repurposed for three scenarios:
+ `GridView` has three different `gridMode` settings that allow the view to be repurposed for three contexts:
  
  - **idle** mode allows the grid to serve as a background decoration behind the main menu
  - **play** mode is the game itself
  - **jam** mode allows the player to jam on the game board like a musical instrument
  
- Because of this unconventional re-use of the primary game board, the structure of the app revolves largely revolves around `GridView` and its `gridMode` property.
+ Because of this unconventional re-use of the primary game view, the structure of the app largely revolves around `GridView` and its `gridMode` property.
 */
 class GridView: UIView {
     var tiles = [TileView]()
