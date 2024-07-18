@@ -3,7 +3,7 @@
 
 # Tracer
 
-Tracer is a Memory game for iOS written by Todd Gibbons using Swift, SwiftUI, Combine and UIKit.  I hope this project is helpful to other game developers as an example of a simple implementation of MVVM.  My developer portfolio is available <a href="https://toddgibbons.com">Here</a>.
+Tracer is a Memory game for iOS written by Todd Gibbons using Swift, SwiftUI, Combine and UIKit.  I hope this project is helpful to other game developers as an example of a simple implementation of MVVM.  Tracer is available on the iOS App Store <a href="https://apps.apple.com/us/app/tracer-a-memory-game/id6477837958">Here</a>.  My developer portfolio is available <a href="https://toddgibbons.com">Here</a>.
 
 **Notes:**
 
